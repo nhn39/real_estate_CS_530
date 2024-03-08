@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% set active = "Adopt" %}
+
+{% block header %}
+<script src="/static/js/goatViewer.js"></script>
+{% endblock %}
+
+{% block title %}
+Adopt a Goat
+{% endblock %}
+
+{% block content %}
+
+<h1>Adopt a Goat</h1>
+
+<p>
+    Please see our awesome goats below and adopt one today!
+</p>
+
+<div id="cards" class="container">
+</div>
+
+<nav>
+    <ul id="paginator" class="pagination justify-content-center">
+    </ul>
+</nav>
+
+<script>
+
+    $(() => {
+        const goatViewer = new GoatViewer(false, 1, 3);
+        goatViewer.load();
+    });
+
+</script>
+
+{% endblock %}
