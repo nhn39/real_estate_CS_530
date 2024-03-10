@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background: #406C39;
+    background: #393b6c;
 }
 
 .btn-primary {
@@ -50,6 +50,11 @@ header {
     color: #204C19;
 }
 
-.card.adopted {
+.card.booked {
     opacity: .25;
+}
+
+.myproperties {
+    display: flex;
+    justify-content: space-between;
 }

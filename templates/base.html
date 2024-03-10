@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>The Goat Pasture - {% block title %}{% endblock %}</title>
+    <title>The Real Estate - {% block title %}{% endblock %}</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,7 +40,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Goat School
+                                        Contact Us
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Action</a>
@@ -49,8 +49,13 @@
                                     </div>
                                 </li>
                                 <li class="nav-item{% if active == 'Adopt' %} active{% endif %}">
-                                    <a class="nav-link" href="/adopt">Adopt a Goat</a>
+                                    <a class="nav-link" href="/booking">Book a Visit</a>
                                 </li>
+                                {% if session['user'] %}
+                                <li class="nav-item{% if active == 'Manage' %} active{% endif %}">
+                                    <a class="nav-link" href="/manage">Manage my properties</a>
+                                </li>
+                                {% endif %}
                             </ul>
                             <ul class="navbar-nav">
                                 {% if session['user'] %}
@@ -60,7 +65,7 @@
                                         Hi {{ session['user']['name'] }}!
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="/mygoats">My Goats</a>
+                                        <a class="dropdown-item" href="/mybookings">My Bookings</a>
                                         <a class="dropdown-item" href="/logout">Log Out</a>
                                     </div>
                                 </li>
