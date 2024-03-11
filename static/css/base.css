@@ -1,11 +1,26 @@
 body {
     font-family: "Avenir";
     font-size: 1rem;
-    background: #eee;
+    background: #76208529;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/img/2d12d25921d53537ffdb88852b12d28f.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1; 
+    z-index: -1;
 }
 
 header {
-    background: #393b6c;
+    background: #7a7ba7;
 }
 
 .btn-primary {
@@ -25,6 +40,7 @@ header {
     padding-right: 1rem;
 }
 
+
 .content {
     padding: 2rem 1.5rem;
 }
@@ -32,6 +48,10 @@ header {
 .jumbotron {
     padding: 1.5rem;
     background: 0;
+}
+
+.jumbotron-heading {
+    color:rgba(255, 47, 186, 0.704)
 }
 
 .jumbotron img {
@@ -57,4 +77,21 @@ header {
 .myproperties {
     display: flex;
     justify-content: space-between;
+}
+
+.form-group label {
+    color: #4A90E2; 
+}
+
+p {
+    color: #3498db;
+}
+
+li {
+    color: #3498db; 
+}
+
+.card-price {
+    color: #FF0000; /* Red color */
+    font-size: 20px; /* Larger text */
 }
