@@ -64,7 +64,7 @@ def generate_get_properties_response(args):
 
     return jsonify({
         'properties': properties,
-        'total': len(properties)
+        'total': get_db().get_num_properties(),
     })
 
 @app.route('/api/get_properties', methods=['GET'])
