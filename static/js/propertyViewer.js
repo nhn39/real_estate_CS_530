@@ -28,6 +28,8 @@ function PropertyViewer(myBookings, numRows, propertiesPerRow) {
                                 <h5 class="card-title">${property.name}</h5>
                                 <p class="card-text">${property.description}</p>
                                 <p class="card-price">$${property.price}</p>
+                                <p class="card-text">${property.address}</p>
+                                <p class="card-text">${property.country}</p>
                                 <button class="book-button btn btn-primary">
                                     ${myBookings == null ? 'Remove Property' : myBookings ? 'Cancel Booking' : 'Book Visit'}
                                 </button>

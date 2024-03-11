@@ -11,13 +11,14 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/static/img/2d12d25921d53537ffdb88852b12d28f.jpg');
+    background-image: url('/static/img/real-estate-black-background-minimalist-style-poster-banner_1899077.jpg!sw800');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1; 
     z-index: -1;
 }
+
 
 header {
     background: #7a7ba7;
@@ -51,7 +52,7 @@ header {
 }
 
 .jumbotron-heading {
-    color:rgba(255, 47, 186, 0.704)
+    color:rgba(47, 193, 255, 0.704)
 }
 
 .jumbotron img {
@@ -84,14 +85,30 @@ header {
 }
 
 p {
-    color: #3498db;
+    color: #ffffff;
 }
 
 li {
-    color: #3498db; 
+    color: #ffffff; 
 }
 
 .card-price {
     color: #FF0000; /* Red color */
     font-size: 20px; /* Larger text */
+}
+
+.card-text {
+    color: #000000; /* Red color */
+    font-size: 18px; /* Larger text */
+}
+
+.card-title {
+    font-size:30px;
+}
+
+
+.pagination > li > a
+{
+    background-color: rgb(0, 0, 0);
+    color: #5A4181;
 }
